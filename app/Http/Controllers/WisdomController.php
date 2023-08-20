@@ -22,7 +22,7 @@ class WisdomController extends Controller
         ]);
 
         // Create a new motivational textt
-        WisdomGenerator::insert($validatedData['text']);
+        // WisdomGenerator::insert($validatedData['text']);
 
         return redirect()->route('wisdom.index')->with('success', 'Motivational text created successfully!');
     }
