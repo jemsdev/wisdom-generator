@@ -21,7 +21,7 @@ class WisdomController extends Controller
             'text' => 'required|string|max:255',
         ]);
 
-        // Create a new motivational text
+        // Create a new motivational textt
         WisdomGenerator::insert($validatedData['text']);
 
         return redirect()->route('wisdom.index')->with('success', 'Motivational text created successfully!');
